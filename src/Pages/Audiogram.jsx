@@ -2,6 +2,7 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
 import {Spacer} from '@chakra-ui/react'
+//https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557
 
 ChartJS.register(
   CategoryScale,
@@ -41,15 +42,17 @@ const AudiogramChart = ({ data }) => {
       {
         label: 'Left Ear',
         data: data.leftEar,
-        borderColor: 'blue',
-        backgroundColor: 'blue',
+        borderColor: '#A8DADC',
+        backgroundColor: '#A8DADC',
+        //borderColor: 'blue',
+        //backgroundColor: 'blue',
         fill: false,
       },
       {
         label: 'Right Ear',
         data: data.rightEar,
-        borderColor: 'red',
-        backgroundColor: 'red',
+        borderColor: '#457B9D',
+        backgroundColor: '#457B9D',
         fill: false,
       },
     ],
